@@ -1,0 +1,7 @@
+add-color(name, lightModeValue, darkModeValue = false)
+  body
+    {name}: lightModeValue
+
+  if darkModeValue
+    .body--dark
+      {name}: darkModeValue

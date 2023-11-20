@@ -1,0 +1,37 @@
+// BREAKPOINTS
+
+$xs-breakpoint = 576px;
+$sm-breakpoint = 1024px;
+$md-breakpoint = 1440px;
+$lg-breakpoint = 1920px;
+
+// FONTS //
+
+$base-font-size = 1rem;
+
+// COLORS //
+
+$color-secondary = #fff;
+$color-blue-2 = #17233b
+$color-blue-5 = #394356
+$color-grey-8 = #c6cddc
+$color-grey-10 = #dfe3e7
+$color-grey-11 = #f3f5f7
+$color-orange = #fa8f76
+$header-gradient-dark = linear-gradient(139deg, #001f3f, #003366, #4d4dff, #001f3f) 3;
+$header-gradient = linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+
+
+add-color('--page-bg', $color-secondary, var(--q-dark))
+add-color('--text-color-main', var(--q-dark), $color-secondary)
+add-color('--header-gradient', $header-gradient, $header-gradient-dark)
+add-color('--file-bg', $color-grey-11, var(--q-dark))
+
+:root
+  --base-font-size: $base-font-size
+  --color-secondary: $color-secondary
+  --color-blue-2: $color-blue-2
+  --color-blue-5: $color-blue-5
+  --color-grey-8: $color-grey-8
+  --color-grey-10: $color-grey-10
+  --color-orange: $color-orange
