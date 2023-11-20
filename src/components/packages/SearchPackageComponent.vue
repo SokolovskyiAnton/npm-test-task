@@ -37,7 +37,6 @@ async function handleClick() {
   if (!packageName.value) return
 
   await packagesStore.getPackage(packageName.value.toLowerCase());
-  packageName.value = '';
 }
 </script>
 
