@@ -6,6 +6,8 @@
         class="full-width"
         filled
         placeholder="Search Package"
+        :rules="[val => !!val]"
+        hide-bottom-space
         @keyup.enter="handleClick"
       >
         <template v-slot:prepend>
@@ -32,7 +34,9 @@ const packagesStore = usePackagesStore();
 
 const isLoading = computed(() => packagesStore.getLoadingState);
 async function handleClick() {
-  await packagesStore.getPackage(packageName.value);
+  if (!packageName.value) return
+
+  await packagesStore.getPackage(packageName.value.toLowerCase());
   packageName.value = '';
 }
 </script>
